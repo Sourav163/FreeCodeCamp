@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Text Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Page Title</h1>
+    <p id="description">Short Explanation</p>
+    <form id="survey-form">
+        <label id="name-label" for="name"> Name* :</label><br>
+        <input type="text" id="name" placeholder="Enter Your Name" required><br><br>
+        <label id="email-label" for="email"> E-Mail* :</label><br>
+        <input type="email" id="email" placeholder="Enter Your E-Mail" required><br><br>
+        <label id="number-label" for="number"> Age (Optional) :</label><br>
+        <input type="number" id="number" placeholder="Enter Your Age" min="10" max="99" style="width:170px"><br><br>
+        <label for="role">Current Role :</label><br>
+        <select id="dropdown" style="width:170px; height:25px">
+            <option disabled selected value>Select Role</option>
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="employee">Employee</option>
+        </select><br><br>
+        <div class="gender"> Gender :<br>
+            <label>
+                <input type="radio" name="gender" value="male" checked>Male<br>
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">Female<br>
+            </label>
+            <label>
+                <input type="radio" name="gender" value="others">Others<br>
+            </label>
+        </div><br>
+        <div class="hobby"> Hobbies :<br>
+            <label>
+                <input type="checkbox" name="gender" value="reading">Reading<br>
+            </label>
+            <label>
+                <input type="checkbox" name="gender" value="singing">Singing<br>
+            </label>
+            <label>
+                <input type="checkbox" name="gender" value="dancing">Dancing<br>
+            </label>
+            <label>
+                <input type="checkbox" name="gender" value="playing">Playing<br>
+            </label>
+        </div><br>
+        <div class="comment"> Comments : <br>
+            <textarea rows="10" cols="25"></textarea>
+        </div><br>
+        <button id="submit" value="submit">Submit</button>
+    </form>
+</body>
+
+</html>
